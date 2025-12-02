@@ -117,3 +117,10 @@ body{
 .about-cards{ display:grid; gap:0.9rem; }
 .card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.02); }
 .skill-card h3{ margin:0 0 0.5rem; }
+
+/* SKILLS */
+.skills-grid{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.skill{ background:var(--card); padding:0.9rem; border-radius:10px; border:1px solid rgba(255,255,255,0.03); }
+.skill-head{ display:flex; justify-content:space-between; margin-bottom:0.6rem; color:var(--muted); font-weight:600; }
+.skill-bar{ background:rgba(255,255,255,0.03); height:10px; border-radius:6px; overflow:hidden; }
+.skill-bar-fill{ width:0%; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); transition: width 900ms cubic-bezier(.2,.9,.3,1); }
