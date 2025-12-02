@@ -24,3 +24,27 @@ $$('.nav-link').forEach(link => {
     if (nav.classList.contains('nav-mobile')) nav.classList.remove('nav-mobile');
   });
 });
+
+/* ========== Active link on scroll ========== */
+const sections = $$('main section[id]');
+const navLinks = $$('.nav-link');
+
+function onScroll() {
+  const scrollPos = window.scrollY + 120;
+  let currentId = '';
+  sections.forEach(sec => {
+    if (sec.offsetTop <= scrollPos && (sec.offsetTop + sec.offsetHeight) > scrollPos) {
+      currentId = sec.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+  });
+
+  // shrink header on scroll
+  if (window.scrollY > 40) header.classList.add('scrolled');
+  else header.classList.remove('scrolled');
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
