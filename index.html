@@ -1,17 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio — Seu Nome</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio — Seu Nome</title>
 
-  <!-- Tipografia (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tipografia (Google Fonts) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Meta para tema/cor -->
-  <meta name="theme-color" content="#0f172a">
-</head>
-<body>
+    <!-- Meta para tema/cor -->
+    <meta name="theme-color" content="#0f172a" />
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">SeuNome</a>
+        <nav class="nav" id="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">Sobre</a>
+          <a href="#skills" class="nav-link">Habilidades</a>
+          <a href="#projects" class="nav-link">Projetos</a>
+          <a href="#experience" class="nav-link">Formação</a>
+          <a href="#contact" class="nav-link cta">Contato</a>
+          <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
