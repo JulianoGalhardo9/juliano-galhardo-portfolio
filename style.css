@@ -33,3 +33,46 @@ body{
   margin:0 auto;
   padding: 2rem;
 }
+
+/* ========== Header ========== */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(7,9,21,0.6), rgba(7,9,21,0.25));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.brand{
+  color:var(--accent);
+  font-weight:700;
+  letter-spacing:0.4px;
+  text-decoration:none;
+  font-size:1.1rem;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  position:relative;
+}
+.nav-link{
+  color:var(--muted);
+  text-decoration:none;
+  padding:0.6rem 0.8rem;
+  border-radius:10px;
+  transition:color var(--transition), background var(--transition);
+}
+.nav-link:hover{ color:var(--text); background:var(--glass); }
+.cta{ background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#022; padding:0.45rem 0.9rem; border-radius:10px; font-weight:600; }
+
+/* nav mobile toggle */
+.nav-toggle{ display:none; background:none; border:0; padding:6px; margin-left:8px; cursor:pointer; }
+.nav-toggle span{ display:block; width:22px; height:2px; background:var(--text); margin:4px 0; border-radius:4px; transition:all 200ms; }
