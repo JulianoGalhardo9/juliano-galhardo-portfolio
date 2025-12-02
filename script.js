@@ -48,3 +48,20 @@ function onScroll() {
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+/* ========== Skills animation: preenche as barras quando estiverem no viewport ========== */
+const skillBars = $$('.skill-bar');
+
+function animateSkills(){
+  skillBars.forEach(bar => {
+    const percent = bar.dataset.percent || '0';
+    const fill = bar.querySelector('.skill-bar-fill');
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      // Anima até a largura desejada
+      fill.style.width = percent + '%';
+    }
+  });
+}
+window.addEventListener('scroll', animateSkills, { passive: true });
+window.addEventListener('load', animateSkills);
