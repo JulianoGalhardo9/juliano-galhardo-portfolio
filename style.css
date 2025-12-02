@@ -137,3 +137,18 @@ body{
 .timeline-item{ display:flex; gap:1rem; align-items:flex-start; }
 .timeline-date{ min-width:110px; color:var(--muted); font-weight:700; }
 .timeline-body{ background:var(--card); padding:1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.02); }
+
+
+/* CONTACT */
+.contact-grid{ display:grid; grid-template-columns: 1fr 420px; gap:1.25rem; align-items:start; }
+.contact-card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1.25rem; border-radius:12px; }
+.contact-form{ background:var(--card); padding:1.25rem; border-radius:12px; border:1px solid rgba(255,255,255,0.02); }
+.contact-form label{ display:block; margin-bottom:0.8rem; color:var(--muted); font-weight:600; }
+.contact-form input, .contact-form textarea{
+  width:100%; padding:0.8rem; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--text);
+  font-size:0.95rem;
+}
+.form-actions{ display:flex; gap:0.6rem; margin-top:0.6rem; }
+
+/* Form message */
+.form-msg{ margin-top:0.6rem; color:var(--accent); }
