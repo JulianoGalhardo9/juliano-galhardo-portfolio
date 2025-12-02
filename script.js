@@ -116,3 +116,22 @@ resetBtn?.addEventListener('click', () => {
   contactForm.reset();
   formMsg.textContent = '';
 });
+
+/* ========== Small polish: atualiza ano do rodapé ========== */
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ========== Accessibility: close mobile menu on ESC ========== */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.classList.contains('nav-mobile')) {
+    nav.classList.remove('nav-mobile');
+  }
+});
+
+/* ========== Placeholders: mostra mensagem se imagens não encontradas (opcional) ========== */
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('error', () => {
+    img.style.objectFit = 'contain';
+    img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="%230b1220"/><text x="50%" y="50%" fill="%2394a3b8" font-size="20" font-family="Inter" dominant-baseline="middle" text-anchor="middle">Imagem não encontrada</text></svg>';
+  });
+});
