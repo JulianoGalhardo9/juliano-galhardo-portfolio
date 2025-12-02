@@ -65,3 +65,54 @@ function animateSkills(){
 }
 window.addEventListener('scroll', animateSkills, { passive: true });
 window.addEventListener('load', animateSkills);
+
+/* ========== Contact form: validação simples e envio simulado ========== */
+const contactForm = $('#contactForm');
+const formMsg = $('#formMsg');
+const resetBtn = $('#resetBtn');
+
+function validateEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}
+
+contactForm?.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = $('#name').value.trim();
+  const email = $('#email').value.trim();
+  const subject = $('#subject').value.trim();
+  const message = $('#message').value.trim();
+
+  // Validações básicas
+  if (!name || !email || !message) {
+    formMsg.style.color = '#f97316'; // warning
+    formMsg.textContent = 'Por favor, preencha os campos obrigatórios.';
+    return;
+  }
+  if (!validateEmail(email)) {
+    formMsg.style.color = '#f97316';
+    formMsg.textContent = 'Email inválido. Verifique e tente novamente.';
+    return;
+  }
+
+  // Simulação de envio: aqui você pode integrar com uma API (Netlify, Formspree, AWS Lambda, etc.)
+  formMsg.style.color = getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#5eead4';
+  formMsg.textContent = 'Enviando...';
+
+  // Simula delay de envio
+  setTimeout(() => {
+    // Mostra sucesso
+    formMsg.style.color = '#34d399';
+    formMsg.textContent = 'Mensagem enviada com sucesso! Obrigado.';
+
+    // Opcional: abrir mailto como fallback (comentado)
+    // window.location.href = `mailto:seu@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+    contactForm.reset();
+  }, 900);
+});
+
+resetBtn?.addEventListener('click', () => {
+  contactForm.reset();
+  formMsg.textContent = '';
+});
