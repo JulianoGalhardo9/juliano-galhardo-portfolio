@@ -110,3 +110,10 @@ body{
 /* ========== Sections ========== */
 .section{ padding:3.5rem 0; }
 .section-title{ font-size:1.25rem; margin-bottom:1.25rem; color:var(--text); }
+
+/* ABOUT */
+.about-grid{ display:grid; grid-template-columns: 1fr 360px; gap:1.5rem; align-items:start; }
+.about-text p{ color:var(--muted); margin:0 0 1rem; }
+.about-cards{ display:grid; gap:0.9rem; }
+.card{ background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1rem; border-radius:12px; border:1px solid rgba(255,255,255,0.02); }
+.skill-card h3{ margin:0 0 0.5rem; }
