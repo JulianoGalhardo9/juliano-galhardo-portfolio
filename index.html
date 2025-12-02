@@ -1,298 +1,406 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio — Seu Nome</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio — Seu Nome</title>
 
-  <!-- Tipografia (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tipografia (Google Fonts) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Meta para tema/cor -->
-  <meta name="theme-color" content="#0f172a">
-</head>
-<body>
+    <!-- Meta para tema/cor -->
+    <meta name="theme-color" content="#0f172a" />
+  </head>
+  <body>
     <!-- Header fixo com menu -->
-  <header class="site-header" id="header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">SeuNome</a>
-      <nav class="nav" id="nav">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">Sobre</a>
-        <a href="#skills" class="nav-link">Habilidades</a>
-        <a href="#projects" class="nav-link">Projetos</a>
-        <a href="#experience" class="nav-link">Formação</a>
-        <a href="#contact" class="nav-link cta">Contato</a>
-        <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-   <main>
-
-    <!-- HERO / HOME -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <h1>Olá — Eu sou <span class="accent">Seu Nome</span></h1>
-          <p class="lead">Desenvolvedor Full Stack | Crio aplicações modernas, escaláveis e com excelente experiência do usuário.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#projects">Ver Projetos</a>
-            <a class="btn btn-outline" href="#contact">Entrar em Contato</a>
-          </div>
-
-          <ul class="hero-highlights">
-            <li>React • Node.js • TypeScript</li>
-            <li>APIs REST • Testes • CI/CD</li>
-            <li>Design responsivo • Acessibilidade</li>
-          </ul>
-        </div>
-
-        <div class="hero-photo">
-          <!-- Substitua "assets/me.jpg" pela sua foto -->
-          <img src="assets/me.jpg" alt="Foto de perfil" id="profilePhoto">
-          <div class="photo-deco"></div>
-        </div>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Juliano Galhardo de Oliveira</a>
+        <nav class="nav" id="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">Sobre</a>
+          <a href="#skills" class="nav-link">Habilidades</a>
+          <a href="#projects" class="nav-link">Projetos</a>
+          <a href="#experience" class="nav-link">Formação</a>
+          <a href="#contact" class="nav-link cta">Contato</a>
+          <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title">Sobre Mim</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>Sou um desenvolvedor full stack com paixão por transformar ideias em produtos digitais reais. Trabalho com foco em código limpo, testes automatizados e entrega contínua. Tenho experiência com front-end moderno (React, Vite), back-end (Node.js, Express), bancos relacionais e não-relacionais, e GCP/AWS para deploy.</p>
-
-            <p>Tenho facilidade para comunicar soluções técnicas para times multidisciplinares e busco sempre aprender novas tecnologias e boas práticas.</p>
-
-            <div class="about-meta">
-              <div><strong>Local:</strong> Sua Cidade, Brasil</div>
-              <div><strong>Disponibilidade:</strong> Estágio / PJ / CLT</div>
-            </div>
-          </div>
-
-          <div class="about-cards">
-            <div class="card skill-card">
-              <h3>Meu foco</h3>
-              <p>Experiência do usuário, performance, escalabilidade e testes.</p>
+    <main>
+      <!-- HERO / HOME -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>
+              Olá ! Eu sou o
+              <span class="accent">Juliano Galhardo de Oliveira</span>
+            </h1>
+            <p class="lead">
+              Desenvolvedor Full Stack | Crio aplicações modernas, escaláveis e
+              com excelente experiência do usuário.
+            </p>
+            <div class="hero-cta">
+              <a class="btn" href="#projects">Ver Projetos</a>
+              <a class="btn btn-outline" href="#contact">Entrar em Contato</a>
             </div>
 
-            <div class="card skill-card">
-              <h3>Processo</h3>
-              <p>Planejamento → Implementação → Testes → Deploy</p>
-            </div>
-
-            <div class="card skill-card">
-              <h3>Contato</h3>
-              <p>Troque suas referências e veja os projetos abaixo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-
-        <div class="skills-grid">
-          <!-- Skill item -->
-          <div class="skill">
-            <div class="skill-head">
-              <strong>JavaScript / TypeScript</strong>
-              <span>90%</span>
-            </div>
-            <div class="skill-bar" data-percent="90"><div class="skill-bar-fill"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-head">
-              <strong>React / Next.js</strong>
-              <span>85%</span>
-            </div>
-            <div class="skill-bar" data-percent="85"><div class="skill-bar-fill"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-head">
-              <strong>Node.js / APIs</strong>
-              <span>88%</span>
-            </div>
-            <div class="skill-bar" data-percent="88"><div class="skill-bar-fill"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-head">
-              <strong>Banco de Dados</strong>
-              <span>80%</span>
-            </div>
-            <div class="skill-bar" data-percent="80"><div class="skill-bar-fill"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-head">
-              <strong>Testes & QA</strong>
-              <span>75%</span>
-            </div>
-            <div class="skill-bar" data-percent="75"><div class="skill-bar-fill"></div></div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-head">
-              <strong>Design & UX</strong>
-              <span>70%</span>
-            </div>
-            <div class="skill-bar" data-percent="70"><div class="skill-bar-fill"></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2 class="section-title">Projetos</h2>
-
-        <div class="projects-grid">
-          <!-- Projeto card: duplique esse bloco para mais projetos -->
-          <article class="project-card">
-            <img src="assets/project1.jpg" alt="Projeto 1">
-            <div class="project-content">
-              <h3>Projeto Exemplo 1</h3>
-              <p>App web full stack com autenticação, dashboard e integração com API externa.</p>
-              <div class="project-actions">
-                <a href="#" target="_blank" rel="noopener" class="btn-sm">Ver Demo</a>
-                <a href="https://github.com/seu-usuario/projeto-exemplo-1" target="_blank" rel="noopener" class="btn-sm btn-outline">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="assets/project2.jpg" alt="Projeto 2">
-            <div class="project-content">
-              <h3>Projeto Exemplo 2</h3>
-              <p>SPA com foco em performance, rotas dinâmicas e otimizações de bundle.</p>
-              <div class="project-actions">
-                <a href="#" target="_blank" rel="noopener" class="btn-sm">Ver Demo</a>
-                <a href="#" target="_blank" rel="noopener" class="btn-sm btn-outline">GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- adicione mais cards conforme necessário -->
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience">
-      <div class="container">
-        <h2 class="section-title">Formação & Experiências</h2>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2024 — 2025</div>
-            <div class="timeline-body">
-              <h4>Estágio em Desenvolvimento — Empresa X</h4>
-              <p>Desenvolvimento de micro-serviços, integração com APIs e implementação de testes automatizados.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2022 — 2024</div>
-            <div class="timeline-body">
-              <h4>Bacharelado em Ciência da Computação — Universidade Y</h4>
-              <p>Foco em algoritmos, estruturas de dados e engenharia de software.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2021</div>
-            <div class="timeline-body">
-              <h4>Projeto independente</h4>
-              <p>Criação de um jogo educacional em web com PWA e deploy em VPS.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Vamos conversar</h3>
-            <p>Preencha o formulário ou envie uma mensagem diretamente:</p>
-
-            <ul class="contact-list">
-              <li><strong>Email:</strong> <a href="mailto:seu@email.com">seu@email.com</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener">Seu LinkedIn</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">seu-usuario</a></li>
+            <ul class="hero-highlights">
+              <li>HTML • CSS • TypeScript •</li>
+              <li>Node.js • JavaScript • SQL •</li>
+              <li>GitHub</li>
             </ul>
-
-            <div class="socials">
-              <!-- Pequenos ícones SVG inline -->
-              <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener" class="icon-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M4 4h4v16H4zM9 4h5v2h.1c.7-1.2 2.4-2.5 4.9-2.5 5.2 0 6.1 3.4 6.1 7.9V20h-4v-7.1c0-1.7-.1-3.9-2.3-3.9-2.3 0-2.7 1.8-2.7 3.7V20h-4z" fill="currentColor"/></svg>
-              </a>
-              <a href="#" aria-label="GitHub" target="_blank" rel="noopener" class="icon-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-1.9c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.8.7 2.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.6 11.6 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.7.9 1.2 2 1.2 3.3 0 4.7-2.7 5.6-5.3 5.9.4.4.8 1 .8 2v3c0 .3.3.6.8.5A12 12 0 0012 .5z" fill="currentColor"/></svg>
-              </a>
-            </div>
           </div>
 
-          <form id="contactForm" class="contact-form" novalidate>
-            <label>
-              <span>Nome</span>
-              <input type="text" name="name" id="name" required placeholder="Seu nome">
-            </label>
+          <div class="hero-photo">
+            <!-- Substitua "assets/me.jpg" pela sua foto -->
+            <img src="img/fotoPerfil.png" alt="Foto de perfil" id="profilePhoto" />
+            <div class="photo-deco"></div>
+          </div>
+        </div>
+      </section>
 
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" id="email" required placeholder="seu@email.com">
-            </label>
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Sou estudante de Ciência da Computação no Instituto Mauá de Tecnologia (IMT), com formação prevista para 2028. Tenho como motivação transformar ideias em soluções tecnológicas úteis, escaláveis e capazes de gerar impacto real. No desenvolvimento Full Stack encontrei a combinação ideal entre lógica, criatividade, inovação e desafios constantes, exatamente o que me move a evoluir todos os dias.
+Atualmente trabalho com HTML, CSS, JavaScript, Node.js e TypeScript, desenvolvendo aplicações completas com foco em desempenho, organização arquitetural e uma experiência de usuário clara e intuitiva. Acredito que tecnologia só faz sentido quando funciona para pessoas, por isso busco sempre construir sistemas eficientes, acessíveis, estáveis e sustentáveis.
+Tenho inglês intermediário e um interesse crescente por Inteligência Artificial, especialmente nas áreas de Prompt Engineering e uso de IA para otimizar processos, produtos e a experiência humana. Estou constantemente explorando novas ferramentas, padrões, conceitos e referências para aprimorar minha visão como engenheiro de software.
+Destaco-me pela dedicação, curiosidade e facilidade em aprender rapidamente. Valorizo ambientes colaborativos, dinâmicos e orientados a resultados, espaços nos quais posso contribuir, crescer e entregar valor de forma consistente. Busco oportunidades que me permitam aplicar meus conhecimentos, desenvolver novas competências e participar de projetos que impactem pessoas e negócios de maneira significativa.
+              </p>
 
-            <label>
-              <span>Assunto</span>
-              <input type="text" name="subject" id="subject" placeholder="Assunto (opcional)">
-            </label>
-
-            <label>
-              <span>Mensagem</span>
-              <textarea name="message" id="message" rows="6" required placeholder="Escreva sua mensagem..."></textarea>
-            </label>
-
-            <div class="form-actions">
-              <button type="submit" class="btn">Enviar Mensagem</button>
-              <button type="button" id="resetBtn" class="btn btn-outline">Limpar</button>
+              <div class="about-meta">
+                <div><strong>Local:</strong> São Paulo, Brasil</div>
+                <div><strong>Disponibilidade:</strong> Estágio</div>
+              </div>
             </div>
 
-            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-          </form>
+            <div class="about-cards">
+              <div class="card skill-card">
+                <h3>Meu foco</h3>
+                <p>
+                  Aprofundar minha atuação em Back-End, com ênfase em arquitetura, performance e boas práticas de engenharia.
+                </p>
+              </div>
+
+              <div class="card skill-card">
+                <h3>Processo</h3>
+                <p>Planejamento → Implementação → Testes → Deploy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title">Habilidades</h2>
+
+          <div class="skills-grid">
+            <!-- Skill item -->
+            <div class="skill">
+              <div class="skill-head">
+                <strong>Node.js / TypeScript</strong>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar" data-percent="90">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <strong>HTML / CSS</strong>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar" data-percent="85">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <strong>JavaScript</strong>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar" data-percent="88">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <strong>GitHub</strong>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar" data-percent="80">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <strong>Banco de Dados</strong>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar" data-percent="75">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <strong>Design & UX</strong>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar" data-percent="70">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Principais projetos</h2>
+
+          <div class="projects-grid">
+            <!-- Projeto card: duplique esse bloco para mais projetos -->
+            <article class="project-card">
+              <img src="img/ApiRest.png" alt="Projeto 1" />
+              <div class="project-content">
+                <h3>fastify-rest-api</h3>
+                <p>
+                  Este projeto fornece uma formação completa e prática para desenvolver APIs modernas, escaláveis e seguras com Fastify + TypeScript.
+Ele cobre desde a fundação da aplicação até testes e deploy
+                </p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn-sm"
+                    >Ver Demo</a
+                  >
+                  <a
+                    href="https://github.com/JulianoGalhardo9/fastify-rest-api"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-sm btn-outline"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/PyGame.png" alt="Projeto 2" />
+              <div class="project-content">
+                <h3>Projeto Exemplo 2</h3>
+                <p>
+                  Jogo feito para a escola Poliedro, inspirado no Show Do Milhão, jogo de perguntas e respostas de matérias da escola
+                </p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn-sm"
+                    >Ver Demo</a
+                  >
+                  <a
+                    href="https://github.com/JulianoGalhardo9/Jogo_do_Milhao"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-sm btn-outline"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="img/Rokuzen.png" alt="Projeto "3 />
+              <div class="project-content">
+                <h3>Site para a Rokuzen</h3>
+                <p>
+                  Desenvolvimento Full-Stack para a empresa Rokuzen. Site de massagem
+                </p>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn-sm"
+                    >Ver Demo</a
+                  >
+                  <a
+                    href="https://github.com/pleomoreno/projeto-rokuzen"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-sm btn-outline"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- adicione mais cards conforme necessário -->
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="container">
+          <h2 class="section-title">Formação & Experiências</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2011 — 2024</div>
+              <div class="timeline-body">
+                <h4>Cólegio Jardim São Paulo </h4>
+                <p>
+                  Desenvolvimento acadêmico completo, com sólida base em matemática, lógica e comunicação. Participação ativa em projetos escolares, pesquisas e atividades que fortaleceram organização, disciplina e aprendizado contínuo.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2025 — 2028</div>
+              <div class="timeline-body">
+                <h4>Bacharelado em Ciência da Computação — Instituto Mauá de Tecnologia</h4>
+                <p>
+                  Foco em algoritmos, estruturas de dados, engenharia de software e arquitetura de sistemas
+Desenvolvimento de projetos práticos, estudo aprofundado de lógica computacional e participação em iniciativas acadêmicas voltadas para tecnologia, programação e inovação.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2023-2025</div>
+              <div class="timeline-body">
+                <h4>Minds English School</h4>
+                <p>
+                  Aprimoramento de comunicação oral e escrita, com foco em conversação, vocabulário técnico e aplicação do idioma em contextos profissionais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Contato</h2>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Vamos conversar</h3>
+              <p>Preencha o formulário ou envie uma mensagem diretamente:</p>
+
+              <ul class="contact-list">
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:jgalhardodev@gmail.com">jgalhardodev@gmail.com</a>
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a
+                    href="https://linkedin.com/in/julianogalhardo9"
+                    target="_blank"
+                    rel="noopener"
+                    >Juliano Galhardo de Oliveira</a
+                  >
+                </li>
+                <li>
+                  <strong>GitHub:</strong>
+                  <a
+                    href="https://github.com/JulianoGalhardo9"
+                    target="_blank"
+                    rel="noopener"
+                    >JulianoGalhardo9</a
+                  >
+                </li>
+              </ul>
+
+              <div class="socials">
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <label>
+                <span>Nome</span>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Seu nome"
+                />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="seu@email.com"
+                />
+              </label>
+
+              <label>
+                <span>Assunto</span>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Assunto (opcional)"
+                />
+              </label>
+
+              <label>
+                <span>Mensagem</span>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  required
+                  placeholder="Escreva sua mensagem..."
+                ></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <button type="button" id="resetBtn" class="btn btn-outline">
+                  Limpar
+                </button>
+              </div>
+
+              <p
+                id="formMsg"
+                class="form-msg"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          &copy; <span id="year"></span> Juliano Galhardo de Oliveira — Todos os direitos
+          reservados.
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>&copy; <span id="year"></span> Seu Nome — Todos os direitos reservados.</div>
-      <div class="footer-links">
-        <a href="#privacy">Política de Privacidade</a>
-        <a href="#terms">Termos</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
