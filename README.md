@@ -21,29 +21,6 @@ Sou graduando em **Engenharia de Software**, com foco no ecossistema **backend**
 
 ---
 
-## 🛠️ Stack Tecnológica
-
-### Backend & Runtime
-![C#](https://img.shields.io/badge/C%23-.NET_10%2F9-512BD4?style=flat-square&logo=dotnet)
-![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=nodedotjs)
-
-### Cloud & Infraestrutura
-![AWS](https://img.shields.io/badge/AWS-ECS_Fargate_·_Lambda_·_SQS_·_SNS_·_S3-FF9900?style=flat-square&logo=amazonaws)
-![Docker](https://img.shields.io/badge/Docker-LocalStack-2496ED?style=flat-square&logo=docker)
-
-### Arquitetura & Qualidade
-![Architecture](https://img.shields.io/badge/Clean_Architecture-DDD_·_CQRS_(MediatR)-blueviolet?style=flat-square)
-![Tests](https://img.shields.io/badge/Testes-xUnit_·_Moq-green?style=flat-square)
-
-### Bancos de Dados
-![SQL](https://img.shields.io/badge/SQL-SQL_Server_(EF_Core)_·_PostgreSQL_·_MySQL_·_MariaDB-CC2927?style=flat-square&logo=microsoftsqlserver)
-
-### Frontend
-![Angular](https://img.shields.io/badge/Angular-18-DD0031?style=flat-square&logo=angular)
-![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=flat-square&logo=react)
-
----
-
 ## 📦 Estrutura do Projeto
 
 O portfólio é construído em **React + TypeScript** com componentização limpa. Os dados dinâmicos são gerenciados por objetos estruturados, facilitando manutenção e evolução:
