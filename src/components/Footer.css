@@ -1,0 +1,15 @@
+.footer { border-top: 1px solid var(--border); padding: 1.5rem 0; }
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand { font-size: 1rem; font-weight: 700; }
+.footer-copy { font-size: 0.78rem; color: var(--muted); }
+.footer-socials { display: flex; gap: 0.75rem; }
+.footer-social { color: var(--muted); transition: color 200ms; }
+.footer-social:hover { color: var(--accent); }
